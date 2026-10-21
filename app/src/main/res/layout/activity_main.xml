@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:background="#F3F3F3">
+
+    <TextView
+        android:id="@+id/tvDistancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distancia: -- cm"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esperando conexión..."
+        android:textSize="20sp"
+        android:layout_marginBottom="32dp" />
+
+    <ImageView
+        android:id="@+id/imgAlerta"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="48dp" />
+
+    <!-- SECCIÓN DEL SIMULADOR -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simulador de Sensor IoT"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etSimulador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa distancia en cm"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnSimular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar Distancia"
+        android:textSize="18sp"
+        android:padding="12dp"/>
+
+</LinearLayout>
